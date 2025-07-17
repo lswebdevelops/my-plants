@@ -35,14 +35,12 @@ import PoemEditScreen from "./screens/admin/PoemEditScreen"; // Import PoemEditS
 import PoemCreateScreen from "./screens/admin/PoemCreateScreen"; // Import PoemCreateScreen
 import PoemScreen from "./screens/PoemScreen";
 
-import BlogListScreen from "./screens/admin/BlogListScreen"; 
-import BlogEditScreen from "./screens/admin/BlogEditScreen"; 
+import BlogListScreen from "./screens/admin/BlogListScreen";
+import BlogEditScreen from "./screens/admin/BlogEditScreen";
 import BlogScreen from "./screens/BlogScreen";
-import BlogDetailsScreen from "./screens/BlogDetailsScreen"
+import BlogDetailsScreen from "./screens/BlogDetailsScreen";
 import BlogCreateScreen from "./screens/admin/BlogCreateScreen";
 
-
-import BiographyScreen from "./screens/BiographyScreen";
 import UsersEmailListScreen from "./screens/admin/UsersEmailListScreen"; // Import UsersEmailListScreen
 import UpcomingScreen from "./screens/UpcomingScreen";
 
@@ -62,11 +60,10 @@ const router = createBrowserRouter(
       <Route path="/register/" element={<RegisterScreen />} />
       <Route path="/poems" element={<PoemScreen />} />
       <Route path="/poem/:id" element={<PoemScreen />} />
-      <Route path="/biography" element={<BiographyScreen />} />
       <Route path="/books" element={<BooksScreen />} />
 
       <Route path="/blogs" element={<BlogScreen />} />
-      <Route path="/blog/:id" element={<BlogDetailsScreen  />} />
+      <Route path="/blog/:id" element={<BlogDetailsScreen />} />
       <Route path="/upcoming" element={<UpcomingScreen />} />
 
       {/* user private route */}
@@ -90,17 +87,14 @@ const router = createBrowserRouter(
         <Route path="/admin/userlist/" element={<UserListScreen />} />
         <Route path="/admin/user/:id/edit" element={<UserEditScreen />} />
         <Route path="/admin/email-list" element={<UsersEmailListScreen />} />
-
         {/* Poem admin routes */}
-        <Route path="/admin/poemlist/" element={<PoemListScreen />} />{" "}           
-        <Route path="/admin/poem/create" element={<PoemCreateScreen />} />{" "}       
+        <Route path="/admin/poemlist/" element={<PoemListScreen />} />{" "}
+        <Route path="/admin/poem/create" element={<PoemCreateScreen />} />{" "}
         <Route path="/admin/poem/:id/edit" element={<PoemEditScreen />} />{" "}
-       
         {/* Blog admin routes */}
-        <Route path="/admin/bloglist/" element={<BlogListScreen />} />{" "}           
-        <Route path="/admin/blog/create" element={<BlogCreateScreen />} />{" "}       
+        <Route path="/admin/bloglist/" element={<BlogListScreen />} />{" "}
+        <Route path="/admin/blog/create" element={<BlogCreateScreen />} />{" "}
         <Route path="/admin/blog/:id/edit" element={<BlogEditScreen />} />{" "}
-       
       </Route>
     </Route>
   )
@@ -110,7 +104,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-              <RouterProvider router={router} />
-          </Provider>
+      <RouterProvider router={router} />
+    </Provider>
   </React.StrictMode>
 );

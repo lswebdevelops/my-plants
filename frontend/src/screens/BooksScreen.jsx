@@ -38,7 +38,7 @@ const BookScreen = () => {
         </Message>
       ) : (
         <>
-          <h1 className="booksPageH1">Livros</h1>
+          <h1 className="booksPageH1">Cultivos</h1>
           <Row>
             {data.books.map((book) => (
               <Col key={book._id} sm={12} md={6} lg={4} xl={3}>

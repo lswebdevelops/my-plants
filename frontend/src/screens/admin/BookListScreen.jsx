@@ -54,7 +54,7 @@ const BookListScreen = () => {
           page={data?.page}
           isAdmin={true}
             />
-          <h1>Livros</h1>
+          <h1>Cultivos</h1>
         </Col>
         <Col className="text-end">
           <Button onClick={createBookHandler} className="btn-sm m-3">

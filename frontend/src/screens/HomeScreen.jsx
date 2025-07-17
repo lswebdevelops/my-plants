@@ -6,7 +6,7 @@ import Book from "../components/Book";
 import Loader from "../components/Loader";
 import Message from "../components/Message";
 import Paginate from "../components/Paginate";
-import BookCarousel from "../components/BookCarousel";
+// import BookCarousel from "../components/BookCarousel";
 
 const HomeScreen = () => {
   const { pageNumber, keyword } = useParams();
@@ -21,7 +21,9 @@ const HomeScreen = () => {
       <div className="homeScreen">
         {!keyword ? (
           // for showing the carousel "comment out || uncomment"
-          <BookCarousel /> || ""
+          // <BookCarousel /> 
+          // || 
+          ""
         ) : (
           <Link to="/" className="btn btn-light mb-4">
             Voltar
@@ -35,11 +37,12 @@ const HomeScreen = () => {
           </Message>
         ) : (
           <>
-            <h1 className="h1-recent-titles">Títulos Recentes</h1>
+            <h1 className="h1-recent-titles">Meus Cultivos:</h1>
             <Row>
               {data.books.map((book) => (
                 <Col key={book._id} sm={12} md={6} lg={4} xl={3}>
-                  <Book book={book} />
+                  {/* <Book book={book} /> */}
+                  {/* aqui adicionar meus cultivos */}
                 </Col>
               ))}
             </Row>

@@ -27,7 +27,7 @@ const BlogCreateScreen = () => {
 
   return (
     <>
-      <h1>Criar Blog</h1>
+      <h1>Criar Blogue</h1>
       {isLoading && <Loader />}
       <Form onSubmit={submitHandler}>
         <Row>
@@ -65,7 +65,7 @@ const BlogCreateScreen = () => {
           />
         </Form.Group>
         <Button type="submit" variant="primary" className="mt-3">
-          Criar Blog
+          Criar Blogue
         </Button>
       </Form>
     </>

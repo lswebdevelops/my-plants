@@ -1,6 +1,14 @@
+:root {
+  --main-light-green-color: #21a366;
+  --main-dark-green-color: #33c481;
+  --main-dark-background: #333;
+  --second-dark-background: #666;
+  --main-light-background: rgb(215, 215, 215);
+  --main-dark-background: rgb(215, 215, 215);
+}
+
 main {
   min-height: 80vh;
- 
 }
 
 .rating span {
@@ -13,7 +21,6 @@ main {
 
 .book-rating-h2 {
   border-radius: 8px;
- 
 }
 .rating-text {
   font-size: 0.8rem;
@@ -72,7 +79,7 @@ table th {
 .available-books {
   padding: 10px 10px 10px 20px;
 }
-.upper-div-book-div{
+.upper-div-book-div {
   display: flex;
   justify-content: center;
 }
@@ -92,7 +99,7 @@ table th {
 }
 
 /* nav bar */
-.nav-header span{
+.nav-header span {
   font-size: 0.9rem;
 }
 
@@ -104,14 +111,14 @@ table th {
     transform: translateX(0); /* Move to its original position */
   }
 }
-.poems-containers-div{
+.poems-containers-div {
   display: flex;
   justify-content: center;
 }
-.poems-containers-div p{
-font-size: 0.9rem;
+.poems-containers-div p {
+  font-size: 0.9rem;
 }
-#poems-containers{
+#poems-containers {
   max-width: 1140px;
 }
 .poemLink {
@@ -169,7 +176,7 @@ main > * {
 .upper-div-poem {
   background-image: url("https://res.cloudinary.com/dvnxrzpnl/image/upload/v1750947845/library-book-book-read_o99ibn.jpg");
   background-size: cover;
-  border-radius: 8px;  
+  border-radius: 8px;
   box-shadow: 8px 12px 25px rgba(0, 0, 0, 0.5), 0px 4px 15px rgba(0, 0, 0, 0.05);
 }
 #poem-content {
@@ -182,7 +189,7 @@ main > * {
   word-wrap: break-word; /* Ensures long words break */
   word-break: break-all; /* Forces breaking long words */
   overflow-wrap: break-word; /* More reliable word breaking */
-  font-size: 1rem;;
+  font-size: 1rem;
 }
 
 #poem-content {
@@ -229,24 +236,7 @@ main > * {
 }
 .h1-recent-titles {
   text-align: center;
-  margin: 85px 85px 85px 85px;
-}
-
-/*  bio */
-.div-image-biography {
-  text-align: center;
-  margin-right: 16px;
-}
-.image-biography {
-  width: 250px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 18px 12px 25px rgba(10, 10, 10, 0.5),
-    4px 14px 15px rgba(0, 0, 0, 0.05);
-}
-.image-biography {
-  position: relative;
-  animation: moveFromLeft 1s ease-out; /* Adjust timing and easing as needed */
+  margin: 8px 8px 5px 5px;
 }
 
 @keyframes moveFromLeft {
@@ -260,7 +250,6 @@ main > * {
 .bio-content,
 .upper-div-book p,
 .poemContainer {
-  
   position: relative;
   opacity: 0; /* Start fully transparent */
   animation: fadeIn 3s ease-out forwards; /* Wait for 1.2s and then become visible */
@@ -319,50 +308,7 @@ main > * {
 }
 /* END SINGLE CATEGORY PAGE */
 /********** Large devices only **********/
-@media (min-width: 1200px) {
-}
-/********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
-  .image-biography {
-    width: 200px;
-    height: auto;
-    border-radius: 8px;
-  }
-}
-/********** Small devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
-  .image-biography {
-    width: 200px;
-    height: auto;
-    border-radius: 8px;
-  }
-}
-/********** Extra small devices only **********/
-@media (max-width: 767px) {
-  .div-image-biography {
-    width: 300px;
-    height: auto;
-  }
-
-  .bio-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .div-container-bio h1 {
-    text-align: center;
-  }
-}
-/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
-@media (max-width: 479px) {
-  .div-image-biography {
-    width: 85%;
-    height: auto;
-  }
-}
-
-p {
+********** Medium devices only **********/ p {
   white-space: pre-wrap;
   overflow-wrap: break-word;
 }
@@ -478,19 +424,22 @@ p {
   font-size: 1.1rem;
   font-weight: bold;
 }
-.admin-menu-a, .perfil-link-a{
+.admin-menu-a,
+.perfil-link-a {
   font-size: 0.8rem;
 }
 
 /* blog */
-.blogHomeScreenContainer,.bookHomeScreenContainer {
+.blogHomeScreenContainer,
+.bookHomeScreenContainer {
   display: flex;
-  
+
   justify-content: center; /* Centers the inner div horizontally */
   padding: 25px;
 }
 
-.blogHomeScreen,.bookHomeScreen {
+.blogHomeScreen,
+.bookHomeScreen {
   max-width: 1140px;
   width: 100%; /* Optional: Ensures responsiveness */
 }
@@ -538,44 +487,42 @@ a {
   font-size: 2.1rem;
 }
 .blog-content {
-  font-size: 1rem; 
+  font-size: 1rem;
   line-height: 1.8;
-  margin-top: 24px;;
+  margin-top: 24px;
 }
-.container-blog-details-div{
+.container-blog-details-div {
   display: flex;
   justify-content: center;
 }
 .container-blog-details {
   border: #131b11 1px solid;
   padding-top: 20px;
-  max-width: 1140px;;
+  max-width: 1140px;
 }
 .container-blog-details h3 {
-  font-size: 1.6rem;;
+  font-size: 1.6rem;
 }
 .container-blog-details p {
-  font-size: 1rem;;
+  font-size: 1rem;
 }
-.blog-author-blog-genetal{
+.blog-author-blog-genetal {
   font-size: 1.2rem;
   align-self: flex-end;
   text-align: right;
   margin-top: auto;
 }
-.blog-createdAt-blog-genetal{
+.blog-createdAt-blog-genetal {
   align-self: flex-end;
   text-align: right;
   margin-top: auto;
   font-size: 0.9rem;
 }
-.blog-title-blog-genetal{
- 
+.blog-title-blog-genetal {
   font-size: 2.1rem;
 }
-.blog-content-blog-genetal{
- 
-  font-size: 1rem; 
+.blog-content-blog-genetal {
+  font-size: 1rem;
   line-height: 1.8;
 }
 /*  extra header/  footer */
@@ -586,12 +533,12 @@ a {
 .icon-bio-header {
   margin: 23px 15px;
 }
-.comment-form-container-div{
+.comment-form-container-div {
   display: flex;
   justify-content: center;
 }
 
-.comments-section-container{ 
+.comments-section-container {
   display: flex;
   justify-content: center;
 }
@@ -606,12 +553,12 @@ a {
   background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 15px;;
+  margin-bottom: 15px;
 }
 
-.ml-button{
-  margin-top: 15px;;
-  margin-bottom: 15px;;
+.ml-button {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .comments-title {
@@ -683,4 +630,15 @@ a {
   color: #777;
   font-style: italic;
   margin-top: 10px;
+}
+
+/*  plants */
+
+/* home */
+.bg-navbar {
+  background-color: #ffffff;
+  color: #21a366;
+}
+.vegetable-image-home {
+  width: 15px;
 }

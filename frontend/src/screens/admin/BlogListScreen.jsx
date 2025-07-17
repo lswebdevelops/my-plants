@@ -49,12 +49,12 @@ const BlogListScreen = () => {
     <>
       <Row className="align-items-center">
         <Col>
-          <h1>Lista de blogs</h1>
+          <h1>Lista de blogues</h1>
         </Col>
         <Col className="text-end">
           <Button onClick={createBlogHandler} className="btn-sm m-3">
             <FaEdit />
-            &nbsp; Criar Blog
+            &nbsp; Criar Blogue
           </Button>
         </Col>
       </Row>
@@ -71,7 +71,7 @@ const BlogListScreen = () => {
             <thead>
               <tr>
                 <th>Código</th>
-                <th>Título</th>
+                <th>Nome</th>
                 <th>Autor</th>
                 <th></th>
               </tr>

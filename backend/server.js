@@ -8,13 +8,11 @@ import bookRoutes from "./routes/bookRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 import orderRoutes from "./routes/orderRoutes.js";
 import uploadRoutes from "./routes/uploadRoutes.js";
-import biographyRoutes from './routes/biographyRoutes.js';
-import blogRoutes from './routes/blogRoutes.js';
-import poemRoutes from './routes/poemRoutes.js'; 
+
+import blogRoutes from "./routes/blogRoutes.js";
+import poemRoutes from "./routes/poemRoutes.js";
 
 import { notFound, errorHandler } from "./middleware/errorMiddleware.js";
-
-
 
 const port = process.env.PORT || 5000;
 
@@ -27,16 +25,12 @@ app.use(express.urlencoded({ extended: true }));
 // cookie parser middleware
 app.use(cookieParser());
 
-
-
 app.use("/api/books", bookRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/orders", orderRoutes);
 app.use("/api/upload", uploadRoutes);
 app.use("/api/poems", poemRoutes);
-app.use("/api/biography", biographyRoutes);
 app.use("/api/blogs", blogRoutes);
-
 
 app.get("/api/config/paypal", (req, res) =>
   res.send({ clientId: process.env.PAYPAL_CLIENT_ID })
@@ -54,7 +48,7 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 //   app.use(express.static(path.join(__dirname, '/frontend/build')));
 
 //   // any route that is not api will be redirected to index.html
-//   app.get('*', (req, res) => 
+//   app.get('*', (req, res) =>
 //   res.sendFile(path.resolve(__dirname, 'frontend', 'build' , 'index.html')))
 // } else {
 //   app.get("/", (req, res) => {

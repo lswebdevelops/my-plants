@@ -88,7 +88,7 @@ setImage(imageUrl);
         Voltar
       </Link>
       <FormContainer>
-        <h1>Editar Blog</h1>
+        <h1>Editar Blogues</h1>
         {loadingUpdate && <Loader />}
         {isLoading ? (
           <Loader />

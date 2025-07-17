@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaArrowUp } from "react-icons/fa";
 import {
   FaHome,
-  FaBook,
+  FaLeaf,
   // FaProjectDiagram,
   FaNewspaper,
   FaFeatherAlt,
@@ -25,16 +25,14 @@ const Footer = () => {
                 <span className="ms-2 d-none d-lg-inline">Home</span>
               </Link>
 
-              <Link
+              {/* <Link
                 as={Link}
                 to="/poems"
                 className="d-flex align-items-center me-3"
               >
                 <FaFeatherAlt size={20} className="d-lg-none" />
                 <span className="ms-2 d-none d-lg-inline">Poemas</span>
-              </Link>
-
-            
+              </Link> */}
 
               {/* <Link
                 as={Link}
@@ -50,23 +48,13 @@ const Footer = () => {
                 to="/books"
                 className="d-flex align-items-center me-3"
               >
-                <FaBook size={20} className="d-lg-none" />
-                <span className="ms-2 d-none d-lg-inline">Livros</span>
+                <FaLeaf size={20} className="d-lg-none" />
+                <span className="ms-2 d-none d-lg-inline">Plantas</span>
               </Link>
 
               <Link as={Link} to="/blogs" className="d-flex align-items-center">
                 <FaNewspaper size={27} className="d-lg-none" />
-                <span className="ms-2 d-none d-lg-inline">Blog</span>
-              </Link>
-
-              {/* <Link to="/biography">Autor</Link>&nbsp;|&nbsp; */}
-              <Link
-                as={Link}
-                to="/biography"
-                className="d-flex align-items-center icon-bio-footer"
-              >
-                <FaUserAlt size={20} className="d-lg-none" />
-                <span className="ms-2 d-none d-lg-inline">Autor</span>
+                <span className="ms-2 d-none d-lg-inline">Blogue</span>
               </Link>
 
               <div className="footer-top-container">
