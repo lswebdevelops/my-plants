@@ -5,6 +5,7 @@ import HomeBookScreen from "./screens/HomeBookScreen";
 import PrivateRoute from "./components/PrivateRoute";
 import AdminRoute from "./components/AdminRoute";
 import LoginScreen from "./screens/LoginScreen";
+import RegisterScreen from "./screens/RegisterScreen";
 import BooksScreen from "./screens/BooksScreen";
 import {
   createBrowserRouter,
@@ -46,7 +47,8 @@ const router = createBrowserRouter(
         element={<HomeScreen />}
       />
       <Route path="/book/:id" element={<HomeBookScreen />} />
-           <Route path="/login/" element={<LoginScreen />} />       
+           <Route path="/login/" element={<LoginScreen />} /> 
+           <Route path="/register/" element={<RegisterScreen />} />      
       <Route path="/books" element={<BooksScreen />} />
 
       <Route path="/blogs" element={<BlogScreen />} />
