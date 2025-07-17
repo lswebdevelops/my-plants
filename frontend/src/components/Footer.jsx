@@ -23,25 +23,7 @@ const Footer = () => {
               <Link as={Link} to="/" className="d-flex align-items-center me-3">
                 <FaHome size={20} className="d-lg-none" />
                 <span className="ms-2 d-none d-lg-inline">Home</span>
-              </Link>
-
-              {/* <Link
-                as={Link}
-                to="/poems"
-                className="d-flex align-items-center me-3"
-              >
-                <FaFeatherAlt size={20} className="d-lg-none" />
-                <span className="ms-2 d-none d-lg-inline">Poemas</span>
-              </Link> */}
-
-              {/* <Link
-                as={Link}
-                to="/upcoming"
-                className="d-flex align-items-center me-3"
-              >
-                <FaProjectDiagram size={20} className="d-lg-none" />
-                <span className="ms-2 d-none d-lg-inline">Projetos</span>
-              </Link> */}
+              </Link>           
 
               <Link
                 as={Link}

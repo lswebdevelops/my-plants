@@ -36,7 +36,7 @@ const BlogCreateScreen = () => {
               <Form.Label>Título</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Digite o título do poema"
+                placeholder="Digite o título do blogue"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
               />
@@ -65,7 +65,7 @@ const BlogCreateScreen = () => {
           />
         </Form.Group>
         <Button type="submit" variant="primary" className="mt-3">
-          Criar Blogue
+          Criar Blog
         </Button>
       </Form>
     </>

@@ -1,19 +1,15 @@
-import React from "react";
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 import {
   FaUser,
   FaUserTie,
   FaHome,
   FaLeaf,
-  FaFeatherAlt,
-  FaUserAlt,
   FaNewspaper,
 } from "react-icons/fa";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate, Link } from "react-router-dom";
 import { useLogoutMutation } from "../slices/usersApiSlice";
 import { logout } from "../slices/authSlice";
-import { resetCart } from "../slices/cartSlice";
 import SearchBox from "./SearchBox";
 
 const Header = () => {
@@ -27,7 +23,6 @@ const Header = () => {
     try {
       await logoutApiCall().unwrap();
       dispatch(logout());
-      dispatch(resetCart());
       navigate("/login");
     } catch (err) {
       console.log(err);
@@ -131,10 +126,7 @@ const Header = () => {
                     className="admin-menu-a"
                   >
                     Editar Cultivos
-                  </NavDropdown.Item>
-                  {/* <NavDropdown.Item as={Link} to="/admin/poemlist" className="admin-menu-a">
-              Editar Poemas
-            </NavDropdown.Item> */}
+                  </NavDropdown.Item>                  
                   <NavDropdown.Item
                     as={Link}
                     to="/admin/bloglist"

@@ -137,7 +137,7 @@ setImage(imageUrl);
                 type="text"
                 as="textarea"
                 rows={5}
-                placeholder="Digite o conteúdo de seu blog"
+                placeholder="Digite o conteúdo de seu blogue"
                 value={content}
                 maxLength="2000"
                 onChange={(e) => setContent(e.target.value)}
