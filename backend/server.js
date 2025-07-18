@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 dotenv.config();
 import cookieParser from "cookie-parser";
 import connectDB from "./config/db.js";
-import bookRoutes from "./routes/bookRoutes.js";
+import plantRoutes from "./routes/plantRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 import uploadRoutes from "./routes/uploadRoutes.js";
 import blogRoutes from "./routes/blogRoutes.js";
@@ -22,7 +22,7 @@ app.use(express.urlencoded({ extended: true }));
 // cookie parser middleware
 app.use(cookieParser());
 
-app.use("/api/books", bookRoutes);
+app.use("/api/plants", plantRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/upload", uploadRoutes);
 app.use("/api/blogs", blogRoutes);

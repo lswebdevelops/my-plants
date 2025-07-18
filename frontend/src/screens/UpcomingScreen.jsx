@@ -1,11 +1,11 @@
-import books from "../bookData.js";
+import plants from "../plantData.js";
 
 const UpcomingScreen = () => {
   return (
     <div className="div-container-projects">
-{books.map((book) => (
-      <div key={book.id} className="div-projects">
-        {book.id !== 1 && <hr />}
+{plants.map((plant) => (
+      <div key={plant.id} className="div-projects">
+        {plant.id !== 1 && <hr />}
 
         <h1 className="h1-upcoming">Projetos</h1>
         <h2 className="h2-upcoming">Contos</h2>
@@ -13,15 +13,15 @@ const UpcomingScreen = () => {
         <div id="div-image-upcoming">
             <img
               className="image-upcoming"
-              src={book.image}
-              alt=" cover of book title "
+              src={plant.image}
+              alt=" cover of plant title "
             />
           </div>
           <div className="div-text-container-upcoming">
-            <h3 className="h3-upcoming">{book.title}</h3>
-            <h4 className="h4-upcoming">Data de lançamento{book.releaseDate}</h4>
+            <h3 className="h3-upcoming">{plant.title}</h3>
+            <h4 className="h4-upcoming">Data de lançamento{plant.releaseDate}</h4>
             <div className="div-parag">
-              <p className="upcoming-para">{book.description}</p>
+              <p className="upcoming-para">{plant.description}</p>
             </div>
 
             <a href="https://www.mercadolivre.com.br/" target="__blank">

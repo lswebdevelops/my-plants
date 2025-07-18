@@ -1,4 +1,4 @@
-const books = [
+const plants = [
   {
     name: "Airpods Wireless Bluetooth Headphones",
     image: "/images/airpods.jpg",
@@ -73,4 +73,4 @@ const books = [
   },
 ];
 
-export default books;
+export default plants;

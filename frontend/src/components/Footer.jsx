@@ -27,7 +27,7 @@ const Footer = () => {
 
               <Link
                 as={Link}
-                to="/books"
+                to="/plants"
                 className="d-flex align-items-center me-3"
               >
                 <FaLeaf size={20} className="d-lg-none" />

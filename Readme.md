@@ -3,11 +3,11 @@ This is a modern and responsive portfolio website for an author, designed to sho
 🚀 Live Demo
 👉 Click here to visit the website
 
-https://books-bkwn.onrender.com
+https://plants-bkwn.onrender.com
 
 
 📸 Screenshot
-![Website](https://github.com/lswebdevelops/books/blob/master/uploads/screenshot_hw.png)
+![Website](https://github.com/lswebdevelops/plants/blob/master/uploads/screenshot_hw.png)
 
 🛠️ Tech Stack
 Frontend: React, HTML, CSS
@@ -16,7 +16,7 @@ Hosting: Render
 Data Source: GitHub
 🎯 Features
 ✅ Showcase of projects and poems
-✅ User reviews for books and poems
+✅ User reviews for plants and poems
 ✅ Clean and responsive design
 ✅ Fast and reliable performance
 
@@ -25,7 +25,7 @@ Data Source: GitHub
 Clone the repository
 
 
-git clone https://github.com/lswebdevelops/books
+git clone https://github.com/lswebdevelops/plants
 
 Navigate to the project directory
 

@@ -1,27 +1,27 @@
 import { Row, Col } from "react-bootstrap";
 import { useParams } from "react-router-dom";
-import { useGetBooksQuery } from "../slices/booksApiSlice";
+import { useGetPlantsQuery } from "../slices/plantsApiSlice";
 import { Link } from "react-router-dom";
-import Book from "../components/Book";
+import Plant from "../components/Plant";
 import Loader from "../components/Loader";
 import Message from "../components/Message";
 import Paginate from "../components/Paginate";
-// import BookCarousel from "../components/BookCarousel";
+// import PlantCarousel from "../components/PlantCarousel";
 
 const HomeScreen = () => {
   const { pageNumber, keyword } = useParams();
 
-  const { data, isLoading, error } = useGetBooksQuery({
+  const { data, isLoading, error } = useGetPlantsQuery({
     keyword,
     pageNumber,
   });
 
   return (
-    <div className="bookHomeScreenContainer ">
+    <div className="plantHomeScreenContainer ">
       <div className="homeScreen">
         {!keyword ? (
           // for showing the carousel "comment out || uncomment"
-          // <BookCarousel /> 
+          // <PlantCarousel /> 
           // || 
           ""
         ) : (
@@ -39,9 +39,9 @@ const HomeScreen = () => {
           <>
             <h1 className="h1-recent-titles">Meus Cultivos:</h1>
             <Row>
-              {data.books.map((book) => (
-                <Col key={book._id} sm={12} md={6} lg={4} xl={3}>
-                  {/* <Book book={book} /> */}
+              {data.plants.map((plant) => (
+                <Col key={plant._id} sm={12} md={6} lg={4} xl={3}>
+                  {/* <Plant plant={plant} /> */}
                   {/* aqui adicionar meus cultivos */}
                 </Col>
               ))}

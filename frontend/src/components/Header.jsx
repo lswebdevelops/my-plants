@@ -58,7 +58,7 @@ const Header = () => {
   </Nav.Link> */}
             <Nav.Link
               as={Link}
-              to="/books"
+              to="/plants"
               className="d-flex align-items-center me-3"
             >
               <FaLeaf size={20} className="d-lg-none" />
@@ -122,7 +122,7 @@ const Header = () => {
                 <NavDropdown title={<FaUserTie size={20} />} id="adminmenu">
                   <NavDropdown.Item
                     as={Link}
-                    to="/admin/booklist"
+                    to="/admin/plantlist"
                     className="admin-menu-a"
                   >
                     Editar Cultivos

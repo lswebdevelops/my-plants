@@ -10,6 +10,6 @@ cloudinary2.config({
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
-console.log("⚠️ Cloudinary2 config LOADED com pasta 'books'");
+console.log("⚠️ Cloudinary2 config LOADED com pasta 'plants'");
 
 export default cloudinary2;
