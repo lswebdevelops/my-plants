@@ -1,4 +1,3 @@
-import React from "react";
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Rating from "./Rating";
@@ -17,14 +16,9 @@ const Book = ({ book }) => {
           </Card.Title>
         </Link>
 
-      <Card.Text as='div'>
-        <Rating value={book.rating}>
-          text={`${book.numReviews}`}
-        </Rating>
-      </Card.Text>
-
-      {/* <Card.Text as="h3">R$&nbsp;{book.price.toFixed(2).replace('.', ',')}</Card.Text> */}
-
+        <Card.Text as="div">
+          <Rating value={book.rating}>text={`${book.numReviews}`}</Rating>
+        </Card.Text>
       </Card.Body>
     </Card>
   );

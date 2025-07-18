@@ -4,14 +4,9 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import {
   Row,
-  Col,
-  Form,
-  Image,
-  ListGroup,
-  Card,
-  Button,
+  Col, 
+  Image,  
 } from "react-bootstrap";
-import Rating from "../components/Rating";
 import {
   useGetBookDetailsQuery,
   useCreateReviewMutation,
@@ -54,7 +49,7 @@ const BookScreen = () => {
 
   return (
     <>
-      <Link className="btn btn-light my-3" to="/">
+      <Link className="btn btn-light my-3" to="/books">
         Voltar
       </Link>
 
