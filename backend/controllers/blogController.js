@@ -43,9 +43,9 @@ const createBlog = asyncHandler(async (req, res) => {
     title: "Novo Artigo",
     image:
       "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1750946746/picture-blog_soomd8.png",
-    author: "Harry Wiese",
+    author: "Luciano Sardanha",
     content:
-      "Sample é o destino perfeito para mentes curiosas que buscam inspiração, conhecimento e entretenimento. Com artigos envolventes sobre tecnologia, cultura, ciência e estilo de vida, nosso blog traz análises aprofundadas, dicas práticas e reflexões instigantes sobre o mundo moderno. Seja para descobrir novas tendências, explorar ideias inovadoras ou simplesmente encontrar uma boa leitura, o Blog Sample é o seu ponto de encontro com o conhecimento.",
+      "X é o destino perfeito para mentes curiosas que buscam inspiração, conhecimento e entretenimento. Com artigos envolventes sobre tecnologia, cultura, ciência e estilo de vida, nosso blog traz análises aprofundadas, dicas práticas e reflexões instigantes sobre o mundo moderno. Seja para descobrir novas tendências, explorar ideias inovadoras ou simplesmente encontrar uma boa leitura, o Blog Sample é o seu ponto de encontro com o conhecimento.",
   });
 
   const createdBlog = await blog.save();

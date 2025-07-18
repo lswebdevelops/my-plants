@@ -91,7 +91,7 @@ const BookEditScreen = () => {
         Voltar
       </Link>
       <FormContainer>
-        <h1>Editar Livro</h1>
+        <h1>Editar Cultivo</h1>
         {loadingUpdate && <Loader />}
         {isLoading ? (
           <Loader />
@@ -100,20 +100,20 @@ const BookEditScreen = () => {
         ) : (
           <Form onSubmit={submitHandler}>
             <Form.Group controlId="name" className="my-2">
-              <Form.Label>Título</Form.Label>
+              <Form.Label>Cultivo</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Digite título"
+                placeholder="Digite nome do cultivo"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               ></Form.Control>
             </Form.Group>
 
-            {/* <Form.Group controlId="price" className="my-2">
-              <Form.Label>Preço</Form.Label>
+            <Form.Group controlId="price" className="my-2">
+              <Form.Label>Meses para plantio (Ex: Setembro a Dezembro: 9,12)</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Digite preço"
+                placeholder="Digite meses para plantio. Ex: 6-12"
                 value={price.toString().replace(".", ",")}
                 onChange={(e) => {
                   // Substitui vírgula por ponto para conversão numérica correta
@@ -124,7 +124,7 @@ const BookEditScreen = () => {
                   }
                 }}
               ></Form.Control>
-            </Form.Group> */}
+            </Form.Group>
 
             <Form.Group controlId="image" className="my-2">
               <Form.Label>Imagem</Form.Label>              
@@ -137,44 +137,34 @@ const BookEditScreen = () => {
             </Form.Group>
 
             <Form.Group controlId="brand" className="my-2">
-              {/* editora > brand */}
-              <Form.Label>Editora</Form.Label>
+              {/* Estação > brand */}
+              <Form.Label>Estação</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Nome da editora"
+                placeholder="Estação para cultivo"
                 value={brand}
                 onChange={(e) => setBrand(e.target.value)}
               ></Form.Control>
             </Form.Group>
 
-            {/* <Form.Group controlId="countInStock" className="my-2">
-              <Form.Label>Quantidade em estoque</Form.Label>
-              <Form.Control
-                type="number"
-                placeholder="Digite a quantidade em estoque"
-                value={countInStock}
-                onChange={(e) => setCountInStock(parseInt(e.target.value))}
-              ></Form.Control>
-            </Form.Group> */}
-
             <Form.Group controlId="category" className="my-2">
-              {/*  autor > category */}
-              <Form.Label>Autor</Form.Label>
+              {/* Plantas companheiras>> > category */}
+              <Form.Label>Plantas companheiras</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Nome do autor"
+                placeholder="Plantas companheiras"
                 value={category}
                 onChange={(e) => setCategory(e.target.value)}
               ></Form.Control>
             </Form.Group>
 
             <Form.Group controlId="description" className="my-2">
-              <Form.Label>Resenha</Form.Label>
+              <Form.Label>Sobre o cultivo</Form.Label>
               <Form.Control
                 type="text"
                 as="textarea"
                  rows={5}
-                placeholder="Digite uma descrição da obra"
+                placeholder="Digite uma descrição sobre o cultivo"
                 value={description}
                 maxLength="2000"
                 onChange={(e) => setDescription(e.target.value)}

@@ -1,5 +1,5 @@
 {
-  "name": "harry_wiese",
+  "name": "my_plants",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   },
   "author": "Luciano Sardanha",
   "license": "ISC",
-  "description": "Harry Wiese website backend and frontend",
+  "description": "My Plants website backend and frontend",
   "type": "module",
   "dependencies": {
     "bcryptjs": "^2.4.3",

@@ -45,15 +45,15 @@ const getBookById = asyncHandler(async (req, res) => {
 
 const createBook = asyncHandler(async (req, res) => {
   const book = new Book({
-    name: "Título da obra",
-    price: 0,
+    name: "Vegetais",
+    price: 1.12,
     user: req.user._id,
-    image: "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1750946977/samplebook2_qrxwni.png",
-    brand: "Editora X",
-    category: "Harry Wiese",
+    image: "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png",
+    brand: "Estação",
+    category: "plantas companheiras",
     countInStock: 0,
     numReviews: 0,
-    description: "Thriller psicológico envolvente que mergulha nas profundezas da mente humana e das escolhas morais em meio ao caos.Quando o renomado neurocientista Dr. Alan Reeves descobre um experimento secreto capaz de reprogramar a memória, ele se vê dividido entre a ética e a ambição. Mas sua pesquisa atrai a atenção de uma organização misteriosa que deseja usar sua invenção para fins obscuros. À medida que Alan luta para proteger seu trabalho, ele começa a questionar sua própria realidade. Memórias antes sólidas se tornam distorcidas, pessoas próximas a ele agem de forma estranha, e a linha entre verdade e ilusão começa a se desfazer. Com reviravoltas surpreendentes e um ritmo eletrizante, Book Sample desafia o leitor a questionar: e se suas lembranças não fossem realmente suas?",
+    description: "Plantar e colher",
   });
 
   const createdBook = await book.save();
@@ -96,7 +96,7 @@ const deleteBook = asyncHandler(async (req, res) => {
 
   if (book) {
     await Book.deleteOne({ _id: book._id });
-    res.status(200).json({ message: "Livro deletado" });
+    res.status(200).json({ message: "Cultivo deletado" });
   } else {
     res.status(404);
     throw new Error("Recurso não encontrado");
@@ -165,7 +165,7 @@ const uploadBookImage = asyncHandler(async (req, res) => {
   }
 
   const uploadResult = await cloudinary2.uploader.upload(file.path, {
-    folder: "books", // <- isso define a pasta correta
+    folder: "plants", // <- isso define a pasta correta
   });
 
   // 🔍 Adicione isto:

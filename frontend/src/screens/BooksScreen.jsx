@@ -6,7 +6,6 @@ import Book from "../components/Book";
 import Loader from "../components/Loader";
 import Message from "../components/Message";
 import Paginate from "../components/Paginate";
-// import BookCarousel from "../components/BookCarousel";
 
 const BookScreen = () => {
   const { pageNumber, keyword } = useParams();
