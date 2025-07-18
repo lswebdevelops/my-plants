@@ -15,10 +15,7 @@ const Book = ({ book }) => {
             <strong>{book.name}</strong>
           </Card.Title>
         </Link>
-
-        <Card.Text as="div">
-          <Rating value={book.rating}>text={`${book.numReviews}`}</Rating>
-        </Card.Text>
+       
       </Card.Body>
     </Card>
   );
