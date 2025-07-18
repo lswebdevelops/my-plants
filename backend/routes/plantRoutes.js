@@ -9,22 +9,18 @@ import {
   createPlant,
   updatePlant,
   deletePlant,
-  createPlantReview,
-  getTopPlants,
-  uploadPlantImage, // ✅ IMPORTA AQUI
+  uploadPlantImage,
 } from "../controllers/plantController.js";
 
 const router = express.Router();
 
+// Buscar todas as plantas e criar nova planta
 router.route("/").get(getPlants).post(protect, admin, createPlant);
 
-// ✅ NOVA ROTA DE UPLOAD
+// Upload de imagem
 router.post("/upload", protect, admin, upload.single("image"), uploadPlantImage);
 
-router.route("/:id/reviews").post(protect, checkObjectId, createPlantReview);
-
-router.get("/top", getTopPlants);
-
+// Operações por ID: buscar, editar e deletar
 router
   .route("/:id")
   .get(getPlantById)

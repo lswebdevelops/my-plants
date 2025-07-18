@@ -40,12 +40,12 @@ const getBlogById = asyncHandler(async (req, res) => {
 
 const createBlog = asyncHandler(async (req, res) => {
   const blog = new Blog({
-    title: "Novo Artigo",
+    title: "Nova Colheita",
     image:
-      "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1750946746/picture-blog_soomd8.png",
-    author: "Luciano Sardanha",
+      "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752855206/blogs/b4ieoj7kbb6utrjqb3cn.avif",
+    author: "Autor",
     content:
-      "X é o destino perfeito para mentes curiosas que buscam inspiração, conhecimento e entretenimento. Com artigos envolventes sobre tecnologia, cultura, ciência e estilo de vida, nosso blog traz análises aprofundadas, dicas práticas e reflexões instigantes sobre o mundo moderno. Seja para descobrir novas tendências, explorar ideias inovadoras ou simplesmente encontrar uma boa leitura, o Blog Sample é o seu ponto de encontro com o conhecimento.",
+      "Compartilhe fotos de suas colheita",
   });
 
   const createdBlog = await blog.save();
@@ -124,7 +124,7 @@ const deleteBlog = asyncHandler(async (req, res) => {
     try {
       // Excluindo os comentários associados ao blog
       const comments = await Comment.find({ entityId: req.params.id });
-      console.log("Comentários encontrados para exclusão:", comments);
+     
       await Comment.deleteMany({ entityId: req.params.id });
 
       // Excluindo o blog

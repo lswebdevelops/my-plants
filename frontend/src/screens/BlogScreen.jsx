@@ -20,7 +20,7 @@ const BlogScreen = () => {
         </Message>
       ) : (
         <>
-          <h1 className="plantsPageH1">Blogue</h1>
+          <h1 className="plantsPageH1">Minha Colheita</h1>
           <Row>
             {data.blogs.map((blog) => (
               <Col key={blog._id} sm={12} md={12} lg={12} xl={12}>

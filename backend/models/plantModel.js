@@ -1,77 +1,33 @@
 import mongoose from "mongoose";
 
-const reviewSchema = mongoose.Schema(
-  {
-    name: {
-         type: String,
-          required: true 
-        },
-    rating: {
-         type: Number, 
-         required: true
-         },
-    comment: { 
-        type: String,
-         required: true
-         },
-    user: {
-      type: mongoose.Schema.Types.ObjectId,
-      required: true,
-      ref: "User",
-    },
-  },
-  {
-    timestamps: true,
-  }
-);
-
 const plantSchema = new mongoose.Schema(
   {
-    user: {
-      type: mongoose.Schema.Types.ObjectId,
-      required: true,
-      ref: "User",
-    },
     name: {
       type: String,
       required: true,
+    },
+    companions: {
+      type: [String], // Ex: ['Tomate', 'Manjericão']
+      default: [],
+    },
+    season: {
+      type: [String], // Ex: ['Primavera', 'Verão']
+      default: [],
+    },
+    monthsByRegion: {
+      norte: [Number],        // Ex: [1, 2, 3]
+      nordeste: [Number],     // Ex: [2, 3, 4]
+      sul: [Number],          // Ex: [9, 10, 11]
+      sudeste: [Number],      // ...
+      centroOeste: [Number],  // ...
+    },
+    info: {
+      type: String,
+      required: false,
     },
     image: {
       type: String,
-      required: true,
-    },
-    brand: {
-      type: String,
-      required: true,
-    },
-    category: {
-      type: String,
-      required: true,
-    },
-    description: {
-      type: String,
-      required: true,
-    },
-    reviews: [reviewSchema],
-    rating: {
-      type: Number,
-      required: true,
-      default: 0,
-    },
-    numReviews: {
-      type: Number,
-      required: true,
-      default: 0,
-    },
-    price: {
-      type: Number,
-      required: true,
-      default: 0,
-    },
-    countInStock: {
-      type: Number,
-      required: true,
-      default: 0,
+      required: false,
     },
   },
   {

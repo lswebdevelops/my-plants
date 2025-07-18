@@ -1,26 +1,30 @@
 import { useState } from "react";
-import { useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { Row, Col, Image } from "react-bootstrap";
+import { toast } from "react-toastify";
+
 import {
   useGetPlantDetailsQuery,
   useCreateReviewMutation,
 } from "../slices/plantsApiSlice";
+
 import Loader from "../components/Loader";
 import Message from "../components/Message";
-import { toast } from "react-toastify";
+import PlantCalendar from "../components/PlantCalendar";
 
 const PlantScreen = () => {
   const { id: plantId } = useParams();
   const [rating, setRating] = useState(0);
   const [comment, setComment] = useState("");
 
+  const regioes = ["norte", "nordeste", "sul", "sudeste", "centroOeste"];
+
   const {
     data: plant,
     isLoading,
-    refetch,
     error,
+    refetch,
   } = useGetPlantDetailsQuery(plantId);
 
   const [createReview, { isLoading: loadingPlantReview }] =
@@ -37,45 +41,11 @@ const PlantScreen = () => {
         comment,
       }).unwrap();
       refetch();
-      toast.success("Review adicionado");
+      toast.success("Review adicionada com sucesso!");
     } catch (err) {
       toast.error(err?.data?.message || err.error);
     }
   };
-
-const getMesesTexto = (entrada) => {
-  const nomesDosMeses = [
-    "janeiro",
-    "fevereiro",
-    "março",
-    "abril",
-    "maio",
-    "junho",
-    "julho",
-    "agosto",
-    "setembro",
-    "outubro",
-    "novembro",
-    "dezembro",
-  ];
-
-  if (typeof entrada === "number" && entrada % 1 !== 0) {
-    const [inicio, fim] = entrada.toString().split(".").map(Number);
-    return `${nomesDosMeses[inicio - 1]} a ${nomesDosMeses[fim - 1]}`;
-  }
-
-  // Se vier como string com vírgula, tipo "9,12"
-  const partes = String(entrada).split(",").map((num) => parseInt(num.trim()));
-
-  if (partes.length === 1) {
-    return nomesDosMeses[partes[0] - 1];
-  } else if (partes.length === 2) {
-    const [inicio, fim] = partes;
-    return `${nomesDosMeses[inicio - 1]} a ${nomesDosMeses[fim - 1]}`;
-  } else {
-    return partes.map((m) => nomesDosMeses[m - 1]).join(", ");
-  }
-};
 
   return (
     <>
@@ -101,38 +71,36 @@ const getMesesTexto = (entrada) => {
                   fluid
                 />
               </Col>
+
               <Col md={9}>
                 <h3>
-                  <strong>Nome: </strong>
-                  {plant.name}
+                  <strong>Nome:</strong> {plant.name}
                 </h3>
                 <hr />
-                <p>
-                  <strong>
-                    Plantas companheiras: <br />
-                  </strong>
-                  {plant.category}
-                </p>
-                <hr />
-                <p>
-                  <strong>Estação: </strong>
-                  {plant.brand}
-                </p>
-                <p>
-                  <strong>Meses para cultivo:(Sul do Brasil) </strong>
-                  {getMesesTexto(plant.price)}
-                </p>
+
+                <h5>Meses de Plantio por Região</h5>
+            <PlantCalendar monthsByRegion={plant.monthsByRegion} />
+
+
 
                 <hr />
+
                 <p>
-                  <strong>Informações: </strong>
-                  {plant.description}
+                  <strong>Plantas Companheiras:</strong>{" "}
+                  {plant.companions && plant.companions.length > 0
+                    ? plant.companions.join(", ")
+                    : "-"}
+                </p>
+                <hr />
+                <p>
+                  <strong>Informações Adicionais:</strong>{" "}
+                  {plant.info || plant.description || "-"}
                 </p>
               </Col>
             </Row>
           </div>
 
-          <hr />
+          {/* Aqui você pode adicionar o form de review, se desejar */}
         </>
       )}
     </>

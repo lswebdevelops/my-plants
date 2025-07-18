@@ -577,3 +577,65 @@ a {
 .vegetable-image-home {
   width: 15px;
 }
+
+
+/* plant-calendar.css */
+
+v.calendar-grid {
+  display: grid;
+  /* 1ª coluna para o nome da região, 12 colunas para os meses */
+  grid-template-columns: 100px repeat(12, 1fr);
+  gap: 2px;
+  align-items: center; /* Alinha verticalmente os itens no centro */
+}
+
+.month-label {
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px;
+}
+
+/* Novo estilo para o rótulo da região */
+.region-label {
+  font-weight: bold;
+  font-size: 14px;
+  padding-right: 10px;
+  text-align: right;
+  text-transform: capitalize; /* Deixa a primeira letra maiúscula */
+}
+
+.region-row {
+  display: contents; /* Mantém a grid alinhada */
+}
+
+.month-box {
+  height: 24px;
+  border: 1px solid #ccc;
+}
+
+/* CSS para a tabela do calendário */
+.plant-calendar-table {
+  width: 100%;
+  border-collapse: collapse; /* Une as bordas das células */
+  margin-top: 1rem;
+}
+
+.plant-calendar-table th,
+.plant-calendar-table td {
+  border: 1px solid #ddd; /* Borda cinza clara */
+  padding: 8px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.plant-calendar-table th {
+  background-color: #f8f9fa; /* Fundo leve para o cabeçalho */
+  font-weight: bold;
+}
+
+/* Célula do nome do mês, alinhada à esquerda */
+.plant-calendar-table td:first-child {
+  text-align: left;
+  font-weight: bold;
+}

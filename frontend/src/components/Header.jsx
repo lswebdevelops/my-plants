@@ -76,7 +76,7 @@ const Header = () => {
               className="d-flex align-items-center"
             >
               <FaNewspaper size={27} className="d-lg-none" />
-              <span className="ms-2 d-none d-lg-inline">Blogue</span>
+              <span className="ms-2 d-none d-lg-inline">Minha Colheita</span>
             </Nav.Link>
           </Nav>
 
@@ -132,7 +132,7 @@ const Header = () => {
                     to="/admin/bloglist"
                     className="admin-menu-a"
                   >
-                    Editar Blogues
+                    Editar Minha Colheita
                   </NavDropdown.Item>
                   <NavDropdown.Item
                     as={Link}

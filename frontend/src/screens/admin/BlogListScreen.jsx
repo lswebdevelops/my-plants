@@ -35,7 +35,7 @@ const BlogListScreen = () => {
   };
 
   const createBlogHandler = async () => {
-    if (!window.confirm("Tem certeza de que deseja criar um novo blog?")) {
+    if (!window.confirm("Tem certeza de que deseja criar uma nova colheita?")) {
       return;
     }
     try {
@@ -49,12 +49,12 @@ const BlogListScreen = () => {
     <>
       <Row className="align-items-center">
         <Col>
-          <h1>Lista de blogues</h1>
+          <h1>Lista de Minha Colheita</h1>
         </Col>
         <Col className="text-end">
           <Button onClick={createBlogHandler} className="btn-sm m-3">
             <FaEdit />
-            &nbsp; Criar Blogue
+            &nbsp; Criar Nova Colheita
           </Button>
         </Col>
       </Row>

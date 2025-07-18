@@ -26,7 +26,14 @@ const UsersEmailListScreen = () => {
 
   // Handler to open the default email client with a mailto link
   const handleSendEmail = () => {
-    const recipients = users.map((user) => user.email).join("; ");
+    if (!users || users.length === 0) return;
+
+    // Use apenas os primeiros 20 e-mails para evitar exceder o limite da URL
+    const recipients = users
+      .slice(0, 20)
+      .map((user) => user.email)
+      .join(",");
+
     window.location.href = `mailto:${recipients}`;
   };
 
@@ -36,7 +43,12 @@ const UsersEmailListScreen = () => {
       <Button variant="primary" onClick={handleDownload} className="mb-3">
         Baixar Emails dos Clientes
       </Button>
-      <Button variant="primary" onClick={handleSendEmail} className="mb-3 ms-2">
+      <Button
+        variant="primary"
+        onClick={handleSendEmail}
+        className="mb-3 ms-2"
+        disabled={!users || users.length === 0}
+      >
         Enviar Email aos Clientes
       </Button>
       {isLoading ? (

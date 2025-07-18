@@ -36,7 +36,7 @@ const Footer = () => {
 
               <Link as={Link} to="/blogs" className="d-flex align-items-center">
                 <FaNewspaper size={27} className="d-lg-none" />
-                <span className="ms-2 d-none d-lg-inline">Blogue</span>
+                <span className="ms-2 d-none d-lg-inline">Minha Colheita</span>
               </Link>
 
               <div className="footer-top-container">

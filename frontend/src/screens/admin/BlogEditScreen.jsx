@@ -19,14 +19,9 @@ const BlogEditScreen = () => {
   const [image, setImage] = useState("");
   const [content, setContent] = useState("");
 
-  const {
-    data: blog,
-    isLoading,
-    error,
-  } = useGetBlogDetailsQuery(blogId);
+  const { data: blog, isLoading, error } = useGetBlogDetailsQuery(blogId);
 
-  const [updateBlog, { isLoading: loadingUpdate }] =
-    useUpdateBlogMutation();
+  const [updateBlog, { isLoading: loadingUpdate }] = useUpdateBlogMutation();
 
   const [uploadBlogImage, { isLoading: loadingUpload }] =
     useUploadBlogImageMutation();
@@ -35,14 +30,14 @@ const BlogEditScreen = () => {
 
   useEffect(() => {
     if (blog) {
-      setTitle(blog.title);      
-      setImage(blog.image);     
+      setTitle(blog.title);
+      setImage(blog.image);
       setAuthor(blog.author);
       setContent(blog.content);
     }
   }, [blog]);
 
- const submitHandler = async (e) => {
+  const submitHandler = async (e) => {
     e.preventDefault();
     const updatedBlog = {
       blogId,
@@ -52,11 +47,9 @@ const BlogEditScreen = () => {
       content,
     };
 
-    // console.log("Image state before updateBlog:", image); 
-
     const result = await updateBlog(updatedBlog);
     if (result.error) {
-      toast.error(result.error);
+      toast.error(result.error?.data?.message || result.error.error || "Erro ao atualizar blog.");
     } else {
       toast.success("Blog atualizado");
       navigate("/admin/bloglist");
@@ -64,23 +57,51 @@ const BlogEditScreen = () => {
   };
 
   const uploadFileHandler = async (e) => {
-  const formData = new FormData();
-  formData.append("image", e.target.files[0]);
+    const file = e.target.files[0];
+    const allowedTypes = ["image/jpeg", "image/jpg", "image/png"];
 
-  try {
-    const res = await uploadBlogImage(formData).unwrap();
+    console.log("Selected file:", file); // Log the selected file
+    if (file) {
+      console.log("File name:", file.name);
+      console.log("File type:", file.type); // Crucial: Log the MIME type
+      console.log("File size:", file.size);
+    }
 
-    // console.log("Resposta do upload:", res); 
+    if (!file) {
+      toast.error("Nenhum arquivo selecionado."); // Added check for no file
+      return;
+    }
 
-    toast.success(res.message);
+    if (!allowedTypes.includes(file.type)) {
+      console.log("Invalid file type detected:", file.type); // Log when an invalid type is caught
+      toast.error("Formato de imagem inválido. Use JPG ou PNG.");
+      return;
+    }
 
-   const imageUrl = res.image;
-setImage(imageUrl);
+    const formData = new FormData();
+    formData.append("image", file);
 
-  } catch (err) {
-    toast.error(err?.data?.message || err.error);
-  }
-};
+    try {
+      // You can add a console.log here to confirm formData is being sent
+      // for (let pair of formData.entries()) {
+      //     console.log(pair[0]+ ', ' + pair[1]);
+      // }
+
+      const res = await uploadBlogImage(formData).unwrap();
+      console.log("Upload successful response:", res); // Log successful response
+
+      toast.success(res.message || "Imagem enviada com sucesso!"); // Add a default success message
+      setImage(res.image);
+    } catch (err) {
+      console.error("Error during image upload:", err); // Log the full error object
+      const message =
+        err?.data?.message ||
+        err?.message ||
+        err?.error ||
+        "Erro desconhecido ao enviar imagem."; // More descriptive default error
+      toast.error(message);
+    }
+  };
 
   return (
     <>
@@ -88,7 +109,7 @@ setImage(imageUrl);
         Voltar
       </Link>
       <FormContainer>
-        <h1>Editar Blogues</h1>
+        <h1>Editar Minha Colheitas</h1>
         {loadingUpdate && <Loader />}
         {isLoading ? (
           <Loader />
@@ -106,22 +127,19 @@ setImage(imageUrl);
               ></Form.Control>
             </Form.Group>
 
-           
-
             <Form.Group controlId="image" className="my-2">
               <Form.Label>Imagem</Form.Label>
-              
+
               <Form.Control
                 type="file"
                 label="Escolha arquivo"
                 onChange={uploadFileHandler}
+                accept=".jpg,.jpeg,.png"
               ></Form.Control>
               {loadingUpload && <Loader />}
             </Form.Group>
-            
-           
 
-            <Form.Group controlId="author" className="my-2">            
+            <Form.Group controlId="author" className="my-2">
               <Form.Label>Autor</Form.Label>
               <Form.Control
                 type="text"
@@ -137,7 +155,7 @@ setImage(imageUrl);
                 type="text"
                 as="textarea"
                 rows={5}
-                placeholder="Digite o conteúdo de seu blogue"
+                placeholder="Digite o conteúdo de seu Minha Colheita"
                 value={content}
                 maxLength="2000"
                 onChange={(e) => setContent(e.target.value)}

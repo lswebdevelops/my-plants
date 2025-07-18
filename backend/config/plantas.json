@@ -1,0 +1,996 @@
+[
+  {
+    "name": "Tomate",
+    "companions": ["Manjericão", "Cenoura", "Cebolinha"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [4, 5, 6, 7, 8],
+      "nordeste": [3, 4, 5, 6, 7, 8],
+      "sul": [8, 9, 10, 11, 12, 1],
+      "sudeste": [8, 9, 10, 11, 12, 1, 2],
+      "centroOeste": [3, 4, 5, 9, 10]
+    },
+    "info": "O tomateiro é uma planta da família Solanaceae. O fruto, o tomate, é amplamente cultivado e consumido em todo o mundo. Para um bom desenvolvimento, necessita de solo bem drenado, rico em matéria orgânica e exposição solar direta por algumas horas. Evite plantar batatas, repolho e outros vegetais crucíferos, cenouras, alho e cebola, e milho perto de tomates. Estas plantas podem competir por nutrientes, compartilhar doenças ou afetar negativamente o crescimento dos tomates.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Manjericão",
+    "companions": ["Tomate"],
+    "season": ["Primavera", "Verão", "Outono"],
+    "monthsByRegion": {
+      "norte": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "nordeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sul": [9, 10, 11, 12, 1, 2, 3],
+      "sudeste": [9, 10, 11, 12, 1, 2, 3, 4],
+      "centroOeste": [1, 2, 3, 4, 9, 10, 11, 12]
+    },
+    "info": "Plantas a evitar: Alecrim, Hortelã e Sálvia",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Alface",
+    "companions": ["Cenoura", "Rabanete", "Morango"],
+    "season": ["Outono", "Inverno"],
+    "monthsByRegion": {
+        "norte": [5, 6, 7],
+        "nordeste": [5, 6, 7],
+        "sul": [2, 3, 4, 5, 6, 7, 8],
+        "sudeste": [3, 4, 5, 6, 7],
+        "centroOeste": [4, 5, 6]
+    },
+    "info": "Em geral, é recomendável evitar o cultivo de salsa e girassol junto à alface, pois podem prejudicar seu desenvolvimento. Além disso, outras plantas como o manjericão, embora não sejam consideradas antagônicas diretas da alface, podem exigir cuidados específicos e não se beneficiam da mesma forma com a proximidade.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Cenoura",
+    "companions": ["Tomate", "Alface", "Cebola", "Ervilha"],
+    "season": ["Outono", "Inverno"],
+    "monthsByRegion": {
+      "norte": [6, 7, 8],
+      "nordeste": [4, 5, 6, 7, 8],
+      "sul": [2, 3, 4, 5, 6, 7, 8, 9],
+      "sudeste": [3, 4, 5, 6, 7, 8],
+      "centroOeste": [4, 5, 6, 7]
+    },
+    "info": "A cenoura é uma raiz rica em betacaroteno e vitamina A. Prefere solos profundos, soltos e bem drenados. Evite plantar próximo ao endro, pois pode afetar o sabor da cenoura.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Cebolinha",
+    "companions": ["Tomate", "Brócolis", "Couve"],
+    "season": ["Primavera", "Verão", "Outono"],
+    "monthsByRegion": {
+      "norte": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "nordeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sul": [8, 9, 10, 11, 12, 1, 2, 3, 4],
+      "sudeste": [8, 9, 10, 11, 12, 1, 2, 3, 4, 5],
+      "centroOeste": [1, 2, 3, 4, 5, 8, 9, 10, 11, 12]
+    },
+    "info": "A cebolinha é uma erva aromática que repele muitos insetos pragas. É excelente companheira para a maioria das plantas. Evite plantar próximo a feijões e ervilhas.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Rúcula",
+    "companions": ["Tomate", "Cenoura", "Beterraba"],
+    "season": ["Outono", "Inverno"],
+    "monthsByRegion": {
+      "norte": [5, 6, 7, 8],
+      "nordeste": [4, 5, 6, 7, 8],
+      "sul": [2, 3, 4, 5, 6, 7, 8, 9],
+      "sudeste": [3, 4, 5, 6, 7, 8],
+      "centroOeste": [4, 5, 6, 7, 8]
+    },
+    "info": "A rúcula é uma folha verde picante, rica em vitaminas A, C e K. Prefere clima mais fresco e solo bem drenado. Evite plantar próximo a plantas da família das crucíferas em excesso.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Espinafre",
+    "companions": ["Morango", "Rabanete", "Ervilha"],
+    "season": ["Outono", "Inverno"],
+    "monthsByRegion": {
+      "norte": [6, 7, 8],
+      "nordeste": [5, 6, 7, 8],
+      "sul": [2, 3, 4, 5, 6, 7, 8],
+      "sudeste": [3, 4, 5, 6, 7, 8],
+      "centroOeste": [4, 5, 6, 7]
+    },
+    "info": "O espinafre é rico em ferro e vitaminas. Prefere clima fresco e solo rico em matéria orgânica. Evite plantar próximo a beterraba, pois competem pelos mesmos nutrientes.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Couve",
+    "companions": ["Cebolinha", "Alecrim", "Batata"],
+    "season": ["Outono", "Inverno"],
+    "monthsByRegion": {
+      "norte": [5, 6, 7],
+      "nordeste": [4, 5, 6, 7],
+      "sul": [2, 3, 4, 5, 6, 7, 8],
+      "sudeste": [3, 4, 5, 6, 7],
+      "centroOeste": [4, 5, 6]
+    },
+    "info": "A couve é rica em vitaminas A, C e K, além de cálcio. Prefere clima fresco e solo bem adubado. Evite plantar próximo a tomates e morangos.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Brócolis",
+    "companions": ["Cebolinha", "Alecrim", "Espinafre"],
+    "season": ["Outono", "Inverno"],
+    "monthsByRegion": {
+      "norte": [5, 6, 7],
+      "nordeste": [4, 5, 6, 7],
+      "sul": [2, 3, 4, 5, 6, 7],
+      "sudeste": [3, 4, 5, 6, 7],
+      "centroOeste": [4, 5, 6]
+    },
+    "info": "O brócolis é rico em vitaminas C e K, além de fibras. Prefere clima fresco e solo bem drenado. Evite plantar próximo a tomates, morangos e feijões.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Rabanete",
+    "companions": ["Alface", "Espinafre", "Cenoura"],
+    "season": ["Outono", "Inverno"],
+    "monthsByRegion": {
+      "norte": [6, 7, 8],
+      "nordeste": [5, 6, 7, 8],
+      "sul": [2, 3, 4, 5, 6, 7, 8],
+      "sudeste": [3, 4, 5, 6, 7, 8],
+      "centroOeste": [4, 5, 6, 7]
+    },
+    "info": "O rabanete é uma raiz de crescimento rápido, rica em vitamina C. Prefere solo solto e bem drenado. Evite plantar próximo a agrião, pois pode inibir seu crescimento.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Beterraba",
+    "companions": ["Rúcula", "Cebola", "Alho"],
+    "season": ["Outono", "Inverno"],
+    "monthsByRegion": {
+      "norte": [6, 7, 8],
+      "nordeste": [5, 6, 7, 8],
+      "sul": [2, 3, 4, 5, 6, 7, 8],
+      "sudeste": [3, 4, 5, 6, 7, 8],
+      "centroOeste": [4, 5, 6, 7]
+    },
+    "info": "A beterraba é rica em fibras e folato. Prefere solo profundo e bem drenado. Evite plantar próximo a espinafre e acelga, pois competem pelos mesmos nutrientes.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Morango",
+    "companions": ["Alface", "Espinafre", "Tomilho"],
+    "season": ["Outono", "Inverno"],
+    "monthsByRegion": {
+      "norte": [6, 7, 8],
+      "nordeste": [5, 6, 7, 8],
+      "sul": [2, 3, 4, 5, 6, 7, 8],
+      "sudeste": [3, 4, 5, 6, 7, 8],
+      "centroOeste": [4, 5, 6, 7]
+    },
+    "info": "O morango é rico em vitamina C e antioxidantes. Prefere clima fresco e solo bem drenado. Evite plantar próximo a plantas da família das crucíferas como couve e brócolis.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Salsa",
+    "companions": ["Tomate", "Cenoura", "Aipo"],
+    "season": ["Primavera", "Outono"],
+    "monthsByRegion": {
+      "norte": [2, 3, 4, 5, 6, 7, 8, 9],
+      "nordeste": [2, 3, 4, 5, 6, 7, 8, 9],
+      "sul": [8, 9, 10, 11, 12, 1, 2, 3],
+      "sudeste": [8, 9, 10, 11, 12, 1, 2, 3, 4],
+      "centroOeste": [2, 3, 4, 5, 8, 9, 10, 11]
+    },
+    "info": "A salsa é rica em vitaminas A, C e K. É uma excelente companheira para muitas plantas. Evite plantar próximo a alface, pois pode inibir seu crescimento.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Coentro",
+    "companions": ["Tomate", "Espinafre", "Rabanete"],
+    "season": ["Outono", "Inverno"],
+    "monthsByRegion": {
+      "norte": [5, 6, 7, 8],
+      "nordeste": [4, 5, 6, 7, 8],
+      "sul": [2, 3, 4, 5, 6, 7, 8],
+      "sudeste": [3, 4, 5, 6, 7, 8],
+      "centroOeste": [4, 5, 6, 7]
+    },
+    "info": "O coentro é uma erva aromática rica em vitaminas A e K. Prefere clima fresco e solo bem drenado. Evite plantar próximo a endro, pois pode afetar o sabor de ambas as plantas.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Alecrim",
+    "companions": ["Couve", "Brócolis", "Feijão"],
+    "season": ["Primavera", "Verão", "Outono"],
+    "monthsByRegion": {
+      "norte": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "nordeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sul": [8, 9, 10, 11, 12, 1, 2, 3, 4],
+      "sudeste": [8, 9, 10, 11, 12, 1, 2, 3, 4, 5],
+      "centroOeste": [1, 2, 3, 4, 5, 8, 9, 10, 11, 12]
+    },
+    "info": "O alecrim é uma erva aromática perene que repele muitos insetos. Prefere solo bem drenado e exposição solar. Evite plantar próximo a manjericão, pois pode inibir seu crescimento.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Tomilho",
+    "companions": ["Morango", "Tomate", "Beringela"],
+    "season": ["Primavera", "Verão", "Outono"],
+    "monthsByRegion": {
+      "norte": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "nordeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sul": [8, 9, 10, 11, 12, 1, 2, 3, 4],
+      "sudeste": [8, 9, 10, 11, 12, 1, 2, 3, 4, 5],
+      "centroOeste": [1, 2, 3, 4, 5, 8, 9, 10, 11, 12]
+    },
+    "info": "O tomilho é uma erva aromática perene com propriedades antibacterianas. Prefere solo bem drenado e exposição solar. Evite regar em excesso.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Orégano",
+    "companions": ["Tomate", "Pimentão", "Berinjela"],
+    "season": ["Primavera", "Verão", "Outono"],
+    "monthsByRegion": {
+      "norte": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "nordeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sul": [8, 9, 10, 11, 12, 1, 2, 3, 4],
+      "sudeste": [8, 9, 10, 11, 12, 1, 2, 3, 4, 5],
+      "centroOeste": [1, 2, 3, 4, 5, 8, 9, 10, 11, 12]
+    },
+    "info": "O orégano é uma erva aromática perene que repele pragas e melhora o sabor de plantas próximas. Prefere solo bem drenado e exposição solar.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Hortelã",
+    "companions": ["Repolho", "Tomate", "Ervilha"],
+    "season": ["Primavera", "Verão", "Outono"],
+    "monthsByRegion": {
+      "norte": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "nordeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sul": [8, 9, 10, 11, 12, 1, 2, 3, 4],
+      "sudeste": [8, 9, 10, 11, 12, 1, 2, 3, 4, 5],
+      "centroOeste": [1, 2, 3, 4, 5, 8, 9, 10, 11, 12]
+    },
+    "info": "A hortelã é uma erva aromática que repele formigas e ratos. Cuidado: pode ser invasiva, plante em vasos. Evite plantar próximo a manjericão e salsa.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Cebola",
+    "companions": ["Cenoura", "Beterraba", "Tomate"],
+    "season": ["Outono", "Inverno"],
+    "monthsByRegion": {
+      "norte": [6, 7, 8],
+      "nordeste": [5, 6, 7, 8],
+      "sul": [2, 3, 4, 5, 6, 7, 8],
+      "sudeste": [3, 4, 5, 6, 7, 8],
+      "centroOeste": [4, 5, 6, 7]
+    },
+    "info": "A cebola é rica em compostos sulfurosos que repelem muitas pragas. Prefere solo bem drenado e exposição solar. Evite plantar próximo a feijões e ervilhas.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Alho",
+    "companions": ["Beterraba", "Tomate", "Alface"],
+    "season": ["Outono", "Inverno"],
+    "monthsByRegion": {
+      "norte": [6, 7, 8],
+      "nordeste": [5, 6, 7, 8],
+      "sul": [2, 3, 4, 5, 6, 7],
+      "sudeste": [3, 4, 5, 6, 7],
+      "centroOeste": [4, 5, 6, 7]
+    },
+    "info": "O alho é um excelente repelente natural de pragas. Prefere solo bem drenado e exposição solar. Evite plantar próximo a feijões e ervilhas.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Pimentão",
+    "companions": ["Orégano", "Manjericão", "Tomate"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [4, 5, 6, 7, 8],
+      "nordeste": [3, 4, 5, 6, 7, 8],
+      "sul": [9, 10, 11, 12, 1],
+      "sudeste": [9, 10, 11, 12, 1, 2],
+      "centroOeste": [3, 4, 5, 9, 10]
+    },
+    "info": "O pimentão é rico em vitamina C e capsaicina. Prefere solo bem drenado e exposição solar. Evite plantar próximo a feijões, pois pode inibir seu crescimento.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Berinjela",
+    "companions": ["Tomilho", "Orégano", "Pimentão"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [4, 5, 6, 7, 8],
+      "nordeste": [3, 4, 5, 6, 7, 8],
+      "sul": [9, 10, 11, 12, 1],
+      "sudeste": [9, 10, 11, 12, 1, 2],
+      "centroOeste": [3, 4, 5, 9, 10]
+    },
+    "info": "A berinjela é rica em fibras e antioxidantes. Prefere clima quente e solo bem drenado. Evite plantar próximo a tomates, pois podem compartilhar as mesmas doenças.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Abobrinha",
+    "companions": ["Milho", "Feijão", "Rabanete"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [4, 5, 6, 7, 8, 9],
+      "nordeste": [3, 4, 5, 6, 7, 8, 9],
+      "sul": [9, 10, 11, 12, 1, 2],
+      "sudeste": [9, 10, 11, 12, 1, 2, 3],
+      "centroOeste": [3, 4, 5, 9, 10, 11]
+    },
+    "info": "A abobrinha é rica em vitaminas A e C. Prefere solo rico em matéria orgânica e espaço para se expandir. Evite plantar próximo a batatas.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Pepino",
+    "companions": ["Rabanete", "Feijão", "Milho"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [4, 5, 6, 7, 8, 9],
+      "nordeste": [3, 4, 5, 6, 7, 8, 9],
+      "sul": [9, 10, 11, 12, 1, 2],
+      "sudeste": [9, 10, 11, 12, 1, 2, 3],
+      "centroOeste": [3, 4, 5, 9, 10, 11]
+    },
+    "info": "O pepino é rico em água e vitaminas. Prefere solo bem drenado e suporte para trepar. Evite plantar próximo a plantas aromáticas fortes como alecrim.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Quiabo",
+    "companions": ["Tomate", "Pimentão", "Berinjela"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [4, 5, 6, 7, 8, 9, 10],
+      "nordeste": [3, 4, 5, 6, 7, 8, 9, 10],
+      "sul": [10, 11, 12, 1, 2],
+      "sudeste": [10, 11, 12, 1, 2, 3],
+      "centroOeste": [3, 4, 5, 10, 11]
+    },
+    "info": "O quiabo é rico em fibras e vitaminas. Prefere clima quente e solo bem drenado. Evite plantar próximo a plantas que preferem clima frio.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Feijão",
+    "companions": ["Milho", "Abobrinha", "Alecrim"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [4, 5, 6, 7, 8, 9],
+      "nordeste": [3, 4, 5, 6, 7, 8, 9],
+      "sul": [9, 10, 11, 12, 1, 2],
+      "sudeste": [9, 10, 11, 12, 1, 2, 3],
+      "centroOeste": [3, 4, 5, 9, 10, 11]
+    },
+    "info": "O feijão fixa nitrogênio no solo, beneficiando plantas próximas. Prefere solo bem drenado e suporte para trepar. Evite plantar próximo a cebola e alho.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Agrião",
+    "companions": ["Tomate", "Rabanete", "Espinafre"],
+    "season": ["Outono", "Inverno"],
+    "monthsByRegion": {
+      "norte": [6, 7, 8],
+      "nordeste": [5, 6, 7, 8],
+      "sul": [2, 3, 4, 5, 6, 7, 8],
+      "sudeste": [3, 4, 5, 6, 7, 8],
+      "centroOeste": [4, 5, 6, 7]
+    },
+    "info": "O agrião é rico em vitaminas A, C e K. Prefere locais com água corrente ou solo sempre úmido. Evite plantar próximo a rabanetes em excesso, pois pode inibir seu crescimento.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Acelga",
+    "companions": ["Cebola", "Alho", "Tomate"],
+    "season": ["Outono", "Inverno"],
+    "monthsByRegion": {
+      "norte": [6, 7, 8],
+      "nordeste": [5, 6, 7, 8],
+      "sul": [2, 3, 4, 5, 6, 7, 8],
+      "sudeste": [3, 4, 5, 6, 7, 8],
+      "centroOeste": [4, 5, 6, 7]
+    },
+    "info": "A acelga é rica em vitaminas A, C e K, além de ferro. Prefere solo rico em matéria orgânica. Evite plantar próximo a beterraba e espinafre.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Aipo",
+    "companions": ["Salsa", "Tomate", "Repolho"],
+    "season": ["Outono", "Inverno"],
+    "monthsByRegion": {
+      "norte": [6, 7, 8],
+      "nordeste": [5, 6, 7, 8],
+      "sul": [2, 3, 4, 5, 6, 7],
+      "sudeste": [3, 4, 5, 6, 7],
+      "centroOeste": [4, 5, 6, 7]
+    },
+    "info": "O aipo é rico em vitaminas A, C e K. Prefere solo sempre úmido e clima fresco. Evite plantar próximo a milho e batata.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Almeirão",
+    "companions": ["Tomate", "Alface", "Cenoura"],
+    "season": ["Outono", "Inverno"],
+    "monthsByRegion": {
+      "norte": [6, 7, 8],
+      "nordeste": [5, 6, 7, 8],
+      "sul": [2, 3, 4, 5, 6, 7, 8],
+      "sudeste": [3, 4, 5, 6, 7, 8],
+      "centroOeste": [4, 5, 6, 7]
+    },
+    "info": "O almeirão é rico em vitaminas A e C. Prefere clima fresco e solo bem drenado. Evite plantar próximo a plantas da família das solanáceas em excesso.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Batata",
+    "companions": ["Couve", "Feijão", "Milho"],
+    "season": ["Outono", "Inverno"],
+    "monthsByRegion": {
+      "norte": [6, 7, 8],
+      "nordeste": [5, 6, 7, 8],
+      "sul": [2, 3, 4, 5, 6, 7, 8],
+      "sudeste": [3, 4, 5, 6, 7, 8],
+      "centroOeste": [4, 5, 6, 7]
+    },
+    "info": "A batata é rica em carboidratos e vitamina C. Prefere solo bem drenado e clima fresco. Evite plantar próximo a tomates, pois compartilham as mesmas doenças.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Batata-doce",
+    "companions": ["Feijão", "Milho", "Espinafre"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [4, 5, 6, 7, 8, 9],
+      "nordeste": [3, 4, 5, 6, 7, 8, 9],
+      "sul": [9, 10, 11, 12, 1, 2],
+      "sudeste": [9, 10, 11, 12, 1, 2, 3],
+      "centroOeste": [3, 4, 5, 9, 10, 11]
+    },
+    "info": "A batata-doce é rica em betacaroteno e vitaminas. Prefere solo bem drenado e clima quente. Evite plantar próximo a tomates e girassóis.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Chuchu",
+    "companions": ["Milho", "Feijão", "Abóbora"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [4, 5, 6, 7, 8, 9],
+      "nordeste": [3, 4, 5, 6, 7, 8, 9],
+      "sul": [9, 10, 11, 12, 1, 2],
+      "sudeste": [9, 10, 11, 12, 1, 2, 3],
+      "centroOeste": [3, 4, 5, 9, 10, 11]
+    },
+    "info": "O chuchu é rico em fibras e vitaminas. Prefere clima quente e úmido, com suporte para trepar. Evite plantar próximo a plantas aromáticas fortes.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Jiló",
+    "companions": ["Pimentão", "Tomate", "Berinjela"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [4, 5, 6, 7, 8, 9],
+      "nordeste": [3, 4, 5, 6, 7, 8, 9],
+      "sul": [10, 11, 12, 1, 2],
+      "sudeste": [10, 11, 12, 1, 2, 3],
+      "centroOeste": [3, 4, 5, 10, 11]
+    },
+    "info": "O jiló é rico em vitaminas A e C. Prefere clima quente e solo bem drenado. Evite plantar próximo a plantas que preferem clima frio.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Inhame",
+    "companions": ["Feijão", "Milho", "Mandioca"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [4, 5, 6, 7, 8, 9, 10],
+      "nordeste": [3, 4, 5, 6, 7, 8, 9, 10],
+      "sul": [9, 10, 11, 12, 1, 2],
+      "sudeste": [9, 10, 11, 12, 1, 2, 3],
+      "centroOeste": [3, 4, 5, 9, 10, 11]
+    },
+    "info": "O inhame é rico em carboidratos e vitaminas do complexo B. Prefere solo bem drenado e clima quente. Evite plantar próximo a plantas que competem por espaço radicular.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Mandioca",
+    "companions": ["Inhame", "Feijão", "Milho"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [4, 5, 6, 7, 8, 9, 10],
+      "nordeste": [3, 4, 5, 6, 7, 8, 9, 10],
+      "sul": [9, 10, 11, 12, 1, 2],
+      "sudeste": [9, 10, 11, 12, 1, 2, 3],
+      "centroOeste": [3, 4, 5, 9, 10, 11]
+    },
+    "info": "A mandioca é rica em carboidratos e energia. Prefere solo bem drenado e clima quente. Evite plantar próximo a plantas que necessitam de muito nitrogênio.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Maxixe",
+    "companions": ["Feijão", "Milho", "Quiabo"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [4, 5, 6, 7, 8, 9],
+      "nordeste": [3, 4, 5, 6, 7, 8, 9],
+      "sul": [10, 11, 12, 1, 2],
+      "sudeste": [10, 11, 12, 1, 2, 3],
+      "centroOeste": [3, 4, 5, 10, 11]
+    },
+    "info": "O maxixe é rico em vitaminas A e C. Prefere clima quente e solo bem drenado. Evite plantar próximo a plantas aromáticas fortes.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Milho",
+    "companions": ["Feijão", "Abobrinha", "Pepino"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [4, 5, 6, 7, 8, 9],
+      "nordeste": [3, 4, 5, 6, 7, 8, 9],
+      "sul": [9, 10, 11, 12, 1, 2],
+      "sudeste": [9, 10, 11, 12, 1, 2, 3],
+      "centroOeste": [3, 4, 5, 9, 10, 11]
+    },
+    "info": "O milho é rico em carboidratos e fibras. Serve como suporte natural para feijões. Evite plantar próximo a tomates, pois pode atrair as mesmas pragas.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Repolho",
+    "companions": ["Hortelã", "Aipo", "Cebola"],
+    "season": ["Outono", "Inverno"],
+    "monthsByRegion": {
+      "norte": [6, 7, 8],
+      "nordeste": [5, 6, 7, 8],
+      "sul": [2, 3, 4, 5, 6, 7, 8],
+      "sudeste": [3, 4, 5, 6, 7, 8],
+      "centroOeste": [4, 5, 6, 7]
+    },
+    "info": "O repolho é rico em vitamina C e fibras. Prefere clima fresco e solo rico em matéria orgânica. Evite plantar próximo a tomates e morangos.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Couve-flor",
+    "companions": ["Cebola", "Alho", "Espinafre"],
+    "season": ["Outono", "Inverno"],
+    "monthsByRegion": {
+      "norte": [6, 7, 8],
+      "nordeste": [5, 6, 7, 8],
+      "sul": [2, 3, 4, 5, 6, 7],
+      "sudeste": [3, 4, 5, 6, 7],
+      "centroOeste": [4, 5, 6, 7]
+    },
+    "info": "A couve-flor é rica em vitamina C e fibras. Prefere clima fresco e solo bem drenado. Evite plantar próximo a tomates e feijões.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Nabo",
+    "companions": ["Ervilha", "Cenoura", "Beterraba"],
+    "season": ["Outono", "Inverno"],
+    "monthsByRegion": {
+      "norte": [6, 7, 8],
+      "nordeste": [5, 6, 7, 8],
+      "sul": [2, 3, 4, 5, 6, 7, 8],
+      "sudeste": [3, 4, 5, 6, 7, 8],
+      "centroOeste": [4, 5, 6, 7]
+    },
+    "info": "O nabo é rico em vitaminas C e fibras. Prefere clima fresco e solo bem drenado. Evite plantar próximo a mostarda e outras crucíferas.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Mostarda",
+    "companions": ["Feijão", "Ervilha", "Beterraba"],
+    "season": ["Outono", "Inverno"],
+    "monthsByRegion": {
+      "norte": [6, 7, 8],
+      "nordeste": [5, 6, 7, 8],
+      "sul": [2, 3, 4, 5, 6, 7, 8],
+      "sudeste": [3, 4, 5, 6, 7, 8],
+      "centroOeste": [4, 5, 6, 7]
+    },
+    "info": "A mostarda é rica em vitaminas A, C e K. Suas folhas têm sabor picante. Evite plantar próximo a nabo e outras crucíferas em excesso.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Endívia",
+    "companions": ["Alface", "Espinafre", "Rabanete"],
+    "season": ["Outono", "Inverno"],
+    "monthsByRegion": {
+      "norte": [6, 7, 8],
+      "nordeste": [5, 6, 7, 8],
+      "sul": [2, 3, 4, 5, 6, 7, 8],
+      "sudeste": [3, 4, 5, 6, 7, 8],
+      "centroOeste": [4, 5, 6, 7]
+    },
+    "info": "A endívia é rica em vitaminas A e C. Tem sabor levemente amargo. Prefere clima fresco e solo bem drenado. Evite plantar próximo a plantas que fazem muita sombra.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Chicória",
+    "companions": ["Alface", "Cenoura", "Tomate"],
+    "season": ["Outono", "Inverno"],
+    "monthsByRegion": {
+      "norte": [6, 7, 8],
+      "nordeste": [5, 6, 7, 8],
+      "sul": [2, 3, 4, 5, 6, 7, 8],
+      "sudeste": [3, 4, 5, 6, 7, 8],
+      "centroOeste": [4, 5, 6, 7]
+    },
+    "info": "A chicória é rica em vitaminas A e C. Tem propriedades digestivas. Prefere clima fresco e solo bem drenado. Evite plantar próximo a plantas que competem por luz.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Abóbora",
+    "companions": ["Milho", "Feijão", "Chuchu"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [4, 5, 6, 7, 8, 9],
+      "nordeste": [3, 4, 5, 6, 7, 8, 9],
+      "sul": [9, 10, 11, 12, 1, 2],
+      "sudeste": [9, 10, 11, 12, 1, 2, 3],
+      "centroOeste": [3, 4, 5, 9, 10, 11]
+    },
+    "info": "A abóbora é rica em betacaroteno e vitaminas. Necessita de muito espaço para crescer. Evite plantar próximo a batatas e plantas aromáticas fortes.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Melancia",
+    "companions": ["Milho", "Feijão", "Rabanete"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [4, 5, 6, 7, 8, 9],
+      "nordeste": [3, 4, 5, 6, 7, 8, 9],
+      "sul": [10, 11, 12, 1, 2],
+      "sudeste": [10, 11, 12, 1, 2, 3],
+      "centroOeste": [3, 4, 5, 10, 11]
+    },
+    "info": "A melancia é rica em água e vitaminas. Necessita de muito espaço e clima quente. Evite plantar próximo a plantas que fazem muita sombra.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Melão",
+    "companions": ["Milho", "Feijão", "Rabanete"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [4, 5, 6, 7, 8, 9],
+      "nordeste": [3, 4, 5, 6, 7, 8, 9],
+      "sul": [10, 11, 12, 1, 2],
+      "sudeste": [10, 11, 12, 1, 2, 3],
+      "centroOeste": [3, 4, 5, 10, 11]
+    },
+    "info": "O melão é rico em vitaminas A e C. Necessita de clima quente e solo bem drenado. Evite plantar próximo a plantas que competem por água.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Vagem",
+    "companions": ["Milho", "Cenoura", "Rabanete"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [4, 5, 6, 7, 8],
+      "nordeste": [3, 4, 5, 6, 7, 8],
+      "sul": [9, 10, 11, 12, 1, 2],
+      "sudeste": [9, 10, 11, 12, 1, 2, 3],
+      "centroOeste": [3, 4, 5, 9, 10, 11]
+    },
+    "info": "A vagem é rica em fibras e proteínas. Fixa nitrogênio no solo. Evite plantar próximo a cebola e alho, pois pode inibir seu crescimento.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Pimenta",
+    "companions": ["Tomate", "Manjericão", "Orégano"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [4, 5, 6, 7, 8, 9],
+      "nordeste": [3, 4, 5, 6, 7, 8, 9],
+      "sul": [9, 10, 11, 12, 1, 2],
+      "sudeste": [9, 10, 11, 12, 1, 2, 3],
+      "centroOeste": [3, 4, 5, 9, 10, 11]
+    },
+    "info": "A pimenta é rica em vitamina C e capsaicina. Repele muitas pragas naturalmente. Evite plantar próximo a feijões, pois pode inibir seu crescimento.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Sálvia",
+    "companions": ["Repolho", "Couve", "Tomate"],
+    "season": ["Primavera", "Verão", "Outono"],
+    "monthsByRegion": {
+      "norte": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "nordeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sul": [8, 9, 10, 11, 12, 1, 2, 3, 4],
+      "sudeste": [8, 9, 10, 11, 12, 1, 2, 3, 4, 5],
+      "centroOeste": [1, 2, 3, 4, 5, 8, 9, 10, 11, 12]
+    },
+    "info": "A sálvia é uma erva aromática com propriedades medicinais. Repele muitas pragas. Evite plantar próximo a manjericão, pois pode inibir seu crescimento.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Lavanda",
+    "companions": ["Alecrim", "Tomilho", "Orégano"],
+    "season": ["Primavera", "Verão", "Outono"],
+    "monthsByRegion": {
+      "norte": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "nordeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sul": [8, 9, 10, 11, 12, 1, 2, 3, 4],
+      "sudeste": [8, 9, 10, 11, 12, 1, 2, 3, 4, 5],
+      "centroOeste": [1, 2, 3, 4, 5, 8, 9, 10, 11, 12]
+    },
+    "info": "A lavanda é uma erva aromática que repele mosquitos e pragas. Prefere solo bem drenado e exposição solar. Evite regar em excesso.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Capim-limão",
+    "companions": ["Tomate", "Pimentão", "Berinjela"],
+    "season": ["Primavera", "Verão", "Outono"],
+    "monthsByRegion": {
+      "norte": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "nordeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sul": [8, 9, 10, 11, 12, 1, 2, 3, 4],
+      "sudeste": [8, 9, 10, 11, 12, 1, 2, 3, 4, 5],
+      "centroOeste": [1, 2, 3, 4, 5, 8, 9, 10, 11, 12]
+    },
+    "info": "O capim-limão é uma erva aromática que repele mosquitos. Tem propriedades medicinais. Evite plantar próximo a plantas delicadas, pois pode ser invasivo.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Gengibre",
+    "companions": ["Tomate", "Pimentão", "Berinjela"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [4, 5, 6, 7, 8, 9, 10],
+      "nordeste": [3, 4, 5, 6, 7, 8, 9, 10],
+      "sul": [9, 10, 11, 12, 1, 2],
+      "sudeste": [9, 10, 11, 12, 1, 2, 3],
+      "centroOeste": [3, 4, 5, 9, 10, 11]
+    },
+    "info": "O gengibre é uma raiz aromática com propriedades medicinais. Prefere solo bem drenado e clima quente. Evite plantar próximo a plantas que preferem solo seco.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  }, 
+  {
+    "name": "Aloe Vera",
+    "companions": ["Cactus", "Lavanda", "Camomila"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "nordeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sul": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sudeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "centroOeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    },
+    "info": "A Aloe Vera é uma planta suculenta, conhecida por suas propriedades medicinais e cosméticas. Precisa de bastante luz indireta e solo bem drenado.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Bambu",
+    "companions": ["Orquídea", "Samambaia", "Lírio"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "nordeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sul": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sudeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "centroOeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    },
+    "info": "O bambu é uma planta de crescimento rápido, ideal para cercas vivas ou decoração. Prefere solo fértil, bem drenado e muita luz solar.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Hibisco",
+    "companions": ["Croton", "Lírio", "Orquídea"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "nordeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sul": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sudeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "centroOeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    },
+    "info": "O hibisco é uma planta ornamental com flores vibrantes. Prefere clima quente e solo bem drenado, com exposição ao sol pleno.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Jasmim",
+    "companions": ["Hibisco", "Lírio", "Orquídea"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "nordeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sul": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sudeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "centroOeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    },
+    "info": "O jasmim é uma planta trepadeira com fragrância deliciosa. Prefere sol pleno e solo bem drenado.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Calêndula",
+    "companions": ["Lavanda", "Alecrim", "Tomilho"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "nordeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sul": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sudeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "centroOeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    },
+    "info": "A calêndula é uma flor ornamental com propriedades medicinais. Prefere sol pleno e solo bem drenado.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Cactos",
+    "companions": ["Suculentas", "Aloe Vera", "Lavanda"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "nordeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sul": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sudeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "centroOeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    },
+    "info": "Cactos são plantas resistentes, perfeitas para ambientes secos. Preferem luz direta e solo bem drenado.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Camomila",
+    "companions": ["Lavanda", "Hortelã", "Sálvia"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "nordeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sul": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sudeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "centroOeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    },
+    "info": "A camomila é uma planta medicinal, conhecida por suas propriedades calmantes. Prefere clima ameno e solo bem drenado.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Cipreste",
+    "companions": ["Lavanda", "Alecrim", "Hortelã"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "nordeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sul": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sudeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "centroOeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    },
+    "info": "Cipreste é uma árvore ornamental de folhas perenes, que traz elegância ao jardim. Prefere clima temperado e solo bem drenado.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Lavanda",
+    "companions": ["Alecrim", "Tomilho", "Capim-limão"],
+    "season": ["Primavera", "Verão", "Outono"],
+    "monthsByRegion": {
+      "norte": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "nordeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sul": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sudeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "centroOeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    },
+    "info": "A lavanda é uma planta aromática que repele insetos e pragas. Precisa de sol pleno e solo bem drenado.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  }, 
+  {
+    "name": "Magnólia",
+    "companions": ["Hibisco", "Jasmim", "Camomila"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "nordeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sul": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sudeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "centroOeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    },
+    "info": "Magnólias são árvores de beleza exuberante, ideal para jardins e parques. Preferem clima temperado a subtropical e solo bem drenado.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Ipê",
+    "companions": ["Copaíba", "Guapuruvu", "Jacarandá"],
+    "season": ["Primavera", "Outono"],
+    "monthsByRegion": {
+      "norte": [3, 4, 5, 9, 10, 11],
+      "nordeste": [3, 4, 5, 9, 10, 11],
+      "sul": [4, 5, 6, 9, 10, 11],
+      "sudeste": [4, 5, 6, 9, 10, 11],
+      "centroOeste": [3, 4, 5, 9, 10, 11]
+    },
+    "info": "Ipês são árvores de flores vibrantes, símbolo do Brasil. Preferem clima tropical a subtropical e solos bem drenados.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Gerânio",
+    "companions": ["Lavanda", "Hortelã", "Camomila"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "nordeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sul": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sudeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "centroOeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    },
+    "info": "Gerânios são plantas ornamentais de fácil cuidado, com flores coloridas. Preferem clima ameno a quente e solo bem drenado.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Cilantro",
+    "companions": ["Tomate", "Abóbora", "Milho"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "nordeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sul": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sudeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "centroOeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    },
+    "info": "O cilantro é uma erva aromática usada na culinária. Prefere clima fresco e solo bem drenado.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Hibisco (variedade ornamental)",
+    "companions": ["Jasmim", "Croton", "Lírio"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "nordeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sul": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sudeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "centroOeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    },
+    "info": "Hibisco ornamental possui flores vibrantes. Prefere clima quente e solo bem drenado.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Lírio",
+    "companions": ["Hibisco", "Jasmim", "Caládio"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "nordeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sul": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sudeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "centroOeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    },
+    "info": "Lírios são plantas ornamentais elegantes e perfumadas. Preferem clima temperado a quente, com solo bem drenado.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Croton",
+    "companions": ["Hibisco", "Jasmim", "Palmeira"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "nordeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sul": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sudeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "centroOeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    },
+    "info": "Croton é uma planta de folhagem colorida, resistente ao clima tropical. Prefere luz direta e solo bem drenado.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Orquídea (variedade Phalaenopsis)",
+    "companions": ["Ficus", "Samambaia", "Bromélia"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "nordeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sul": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sudeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "centroOeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    },
+    "info": "Orquídeas são plantas exóticas e sofisticadas, precisam de ambiente com luz indireta e alta umidade.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  },
+  {
+    "name": "Pata de Elefante",
+    "companions": ["Palmeira", "Ficus", "Hera"],
+    "season": ["Primavera", "Verão"],
+    "monthsByRegion": {
+      "norte": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "nordeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sul": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "sudeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "centroOeste": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    },
+    "info": "A pata de elefante é uma suculenta com folhas grandes e resistentes. Ideal para ambientes internos com luz indireta.",
+    "image": "https://res.cloudinary.com/dvnxrzpnl/image/upload/v1752757753/icons8-leaf-96_lj5vq8.png"
+  }
+]

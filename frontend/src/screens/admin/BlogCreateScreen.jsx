@@ -27,7 +27,7 @@ const BlogCreateScreen = () => {
 
   return (
     <>
-      <h1>Criar Blogue</h1>
+      <h1>Criar Nova Colheita</h1>
       {isLoading && <Loader />}
       <Form onSubmit={submitHandler}>
         <Row>
@@ -36,7 +36,7 @@ const BlogCreateScreen = () => {
               <Form.Label>Título</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Digite o título do blogue"
+                placeholder="Digite o título do Minha Colheita"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
               />

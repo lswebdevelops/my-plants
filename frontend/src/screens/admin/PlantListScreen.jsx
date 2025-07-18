@@ -4,13 +4,31 @@ import { FaEdit, FaTrash } from "react-icons/fa";
 import { useParams } from "react-router-dom";
 import Message from "../../components/Message";
 import Loader from "../../components/Loader";
-import Paginate from "../../components/Paginate";
+
 import {
   useGetPlantsQuery,
   useCreatePlantMutation,
   useDeletePlantMutation,
 } from "../../slices/plantsApiSlice";
 import { toast } from "react-toastify";
+
+const monthMap = {
+  1: "Janeiro",
+  2: "Fevereiro",
+  3: "Março",
+  4: "Abril",
+  5: "Maio",
+  6: "Junho",
+  7: "Julho",
+  8: "Agosto",
+  9: "Setembro",
+  10: "Outubro",
+  11: "Novembro",
+  12: "Dezembro",
+};
+
+const sortMonths = (months) =>
+  months ? [...months].sort((a, b) => a - b) : [];
 
 const PlantListScreen = () => {
   const { pageNumber } = useParams();
@@ -21,10 +39,10 @@ const PlantListScreen = () => {
   const [deletePlant, { isLoading: loadingDelete }] = useDeletePlantMutation();
 
   const deleteHandler = async (id) => {
-    if (window.confirm("Are you sure?")) {
+    if (window.confirm("Tem certeza?")) {
       try {
         await deletePlant(id);
-        toast.success("Plant deleted");
+        toast.success("Cultivo deletado com sucesso.");
         refetch();
       } catch (err) {
         toast.error(err?.data?.message || err.error);
@@ -33,7 +51,7 @@ const PlantListScreen = () => {
   };
 
   const createPlantHandler = async () => {
-    if (!window.confirm("Tem certeza de que deseja criar um novo livro?")) {
+    if (!window.confirm("Tem certeza de que deseja criar um novo cultivo?")) {
       return;
     }
     try {
@@ -43,11 +61,11 @@ const PlantListScreen = () => {
       toast.error(err?.data?.message || err.error);
     }
   };
+
   return (
     <>
       <Row className="align-items-center">
         <Col>
-          <Paginate pages={data?.pages} page={data?.page} isAdmin={true} />
           <h1>Cultivos</h1>
         </Col>
         <Col className="text-end">
@@ -69,12 +87,11 @@ const PlantListScreen = () => {
           <Table striped hover responsive className="table-sm">
             <thead>
               <tr>
-                <th>id(Código)</th>
-                <th>name(Cultivo)</th>
-                <th>price(mes a plantar. ex: 6-12)</th>
-                <th>category(Plantar com:ex(abóbora com tomate))</th>
-                <th>brand(Estaçao)</th>
-                <th>Editar</th>
+                <th>Códido(id)</th>
+                <th>Cultivo</th>
+                <th>Estação</th>
+
+                <th></th>
               </tr>
             </thead>
             <tbody>
@@ -82,9 +99,8 @@ const PlantListScreen = () => {
                 <tr key={plant._id}>
                   <td>{plant._id}</td>
                   <td>{plant.name}</td>
-                  <td>{plant.price}</td>
-                  <td>{plant.category}</td>
-                  <td>{plant.brand}</td>
+                  {/* REMOVED THE SPACE HERE: Before: <td>{plant.name}</td>{" "} */}
+                  <td>{plant.season ? plant.season.join(", ") : ""}</td>
                   <td>
                     <Link to={`/admin/plant/${plant._id}/edit`}>
                       <Button variant="light" className="btn-sm mx-2">
